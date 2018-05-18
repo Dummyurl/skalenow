@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linearlayouttop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Sort By:"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <RelativeLayout
+                android:id="@+id/rlspinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="#000000">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="#ffffff">
+
+                    <Spinner
+                        android:id="@+id/spReleaseDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:clickable="false"
+                        android:padding="0dp" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/rlspinner"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioasc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/custom_radio_button"
+                    android:checked="true"
+                    android:text="Ascending"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <RadioButton
+                    android:id="@+id/radiodesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:button="@drawable/custom_radio_button"
+                    android:checked="false"
+                    android:text="Descending"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#cccc"
+            android:gravity="center_horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/btnfirst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/btnfirsthover"
+                android:text="First"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/btnprev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/btnfirst"
+                android:background="@drawable/btnprevhover"
+                android:text="Prev"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/btnnext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/btnprev"
+                android:background="@drawable/btnnexthover"
+                android:text="Next"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/btnlast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/btnnext"
+                android:background="@drawable/btnlasthover"
+                android:text="Last"
+                android:textColor="#000000" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/btnlast"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/txttotalproduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <EditText
+                    android:id="@+id/edtpage"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/txttotalproduct"
+                    android:background="@drawable/edittextdesign"
+                    android:padding="2dp"
+                    android:textSize="13dp"
+                    android:inputType="number"/>
+
+                <RelativeLayout
+                    android:id="@+id/rlgo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/edtpage"
+                    android:background="#cccc">
+
+                    <ImageView
+                        android:id="@+id/btngo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/go"
+                        android:text="Go"
+                        android:textColor="#000000"
+                        android:textSize="13dp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtcurrentpage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/rlgo"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlgridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearlayouttop"
+        android:layout_above="@+id/rlfooter"
+        android:layout_marginTop="10dp">
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:horizontalSpacing="5dp"
+            android:numColumns="2"
+            android:verticalSpacing="5dp">
+
+        </GridView>
+
+        <TextView
+            android:id="@+id/emptylist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="No any product"
+            android:textSize="14dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlfooter"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#555555"
+        android:layout_alignParentBottom="true">
+
+    </RelativeLayout>
+</RelativeLayout>

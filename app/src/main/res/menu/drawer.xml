@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/starred"
+            android:checked="false"
+
+            android:title="@string/cart" />
+
+        <item
+            android:id="@+id/sent_mail"
+            android:checked="false"
+
+            android:title="@string/order" />
+
+        <item
+            android:id="@+id/drafts"
+            android:checked="false"
+
+            android:title="@string/categories" />
+
+
+        <item
+            android:id="@+id/allmail"
+            android:checked="false"
+
+            android:title="@string/recent" />
+        <item
+            android:id="@+id/trash"
+            android:checked="false"
+
+            android:title="@string/featured" />
+        <item
+            android:id="@+id/spam"
+            android:checked="false"
+
+            android:title="@string/all" />
+        <item
+            android:id="@+id/setting"
+            android:checked="false"
+
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/logout"
+            android:checked="false"
+
+            android:title="@string/logout" />
+
+    </group>
+</menu>
